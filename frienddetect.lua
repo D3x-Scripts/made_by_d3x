@@ -13,3 +13,5 @@ if plr:IsFriendsWith(lp.UserId) then
 sys:notif("Your friend "..plr.Name.." has left the game!",3)
 end
 end)
+
+sys:notif("Friend Detector loaded!",2)
