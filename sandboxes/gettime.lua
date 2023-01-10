@@ -4,14 +4,16 @@ local fmt = {}
 local hour = os.date("*t")["hour"]
 local mint = os.date("*t")["min"]
 local secs = os.date("*t")["sec"]
-local pl1
-local pl2
-local pl3
+local pl1 = hour 
+local pl2 = mint
+local pl3 = secs
 local pl4
 -- change to 0, with pm/am switching
 if hour >= 10 then
 pl1 = "0"..hour - 10
 pl4 = 'PM'
+else
+   pl4 = 'AM'
 end
 if mint <= 9 then
 pl2 = "0"..mint
