@@ -1,6 +1,5 @@
 local module = {}
-function module.gettime()
-local type = 12
+function module.gettime(type)
 local fmt = {}
 local hour = os.date("*t")["hour"]
 local mint = os.date("*t")["min"]
