@@ -10,7 +10,7 @@ local pl3 = secs
 local pl4
 -- change to 0, with pm/am switching
 if hour >= 10 then
-pl1 = "0"..hour - 10
+pl1 = "0"..hour - 12
 pl4 = 'PM'
 else
    pl4 = 'AM'
