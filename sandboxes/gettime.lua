@@ -1,5 +1,6 @@
 local module = {}
 function module.gettime()
+local type = 12
 local fmt = {}
 local hour = os.date("*t")["hour"]
 local mint = os.date("*t")["min"]
@@ -7,8 +8,9 @@ local secs = os.date("*t")["sec"]
 local pl1 = hour 
 local pl2 = mint
 local pl3 = secs
-local pl4
+local pl4 = ""
 -- change to 0, with pm/am switching
+if type = 12 then
 if hour >= 10 then
 pl1 = "0"..hour - 12
 pl4 = 'PM'
@@ -22,7 +24,8 @@ if secs <= 9 then
 pl3 = "0"..secs
 else
 pl3 = secs
-end
+end      
+end      
 function fmt:format(str)
 local str = str
 :gsub("#H",pl1)
