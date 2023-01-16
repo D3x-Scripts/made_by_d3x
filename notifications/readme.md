@@ -30,5 +30,4 @@ Example:
 
 ```
 module:postMsg(Color3.new(1,1,0),Enum.Font.SourceSansItalic,16,"Heyo!")
-
 ```
