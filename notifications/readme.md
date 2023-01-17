@@ -1,6 +1,6 @@
 ### Notification System
 
-This is only a readme.md, not the source.
+
 
 ### Functions
 
